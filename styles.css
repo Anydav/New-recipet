@@ -1,5 +1,141 @@
-html,body{
+body{
     background-color: hsl(30, 54%, 90%);
     display: grid;
-  
+    
+    grid-template-rows: 1fr 2.5fr 2.5fr 2.5fr 2.5fr 2.5fr 1fr;
+    height: 100vh;
+    
+}
+@media (min-width : 1200px ) {
+    body{
+        grid-template-columns: 4fr 1fr 1fr 4fr ;
+    }   
+}
+
+@media (min-width:900px) and (max-width:1200px) {
+    body{
+        grid-template-columns: 2.5fr 1fr 1fr 2.5fr ;
+    }
+}
+@media (min-width: 600px) and (max-width:900px) {
+    body{
+        grid-template-columns: 1.5fr 1fr 1fr 1.5fr ;
+    }
+}
+@media (min-width:400px)and (max-width:600px) {
+    body{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    
+}
+@media (max-width:400px) {
+    body{
+        grid-template-columns: 0fr 1fr 1fr 0fr;
+    }
+}
+
+.container{
+    background-color:hsl(0, 0%, 100%);
+    border-radius: 1em;
+    grid-column-start: 2;
+    grid-column-end: 4;
+
+    grid-row-start: 2;
+    grid-row-end: 7;
+    padding: 1em;
+    overflow: scroll;
+}
+.omelette_image{
+    width: 100%;
+
+    border-radius: 0.3em;
+    
+}
+
+@font-face {
+    font-family:"youngserif";
+    src: url(assets/fonts/young-serif/down/YoungSerif-Regular.ttf);
+
+ }
+ @font-face{
+    font-family:'regular';
+    src: url(assets/fonts/outfit/static/Outfit-Regular.ttf);
+}
+@font-face{
+    font-family: sub;
+    src: url(assets/fonts/outfit/static/Outfit-Bold.ttf);
+ }
+h3{
+    font-family: youngserif;
+    font-weight: 100;
+    font-size: 0.8em
+}
+.text{
+    color: hsl(30, 10%, 34%);
+    font-size: 0.2em;
+    font-family: sub;
+}
+.pink_box{
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 0.5em;
+    padding: 0.2em;
+}
+.sub{
+    font-family: sub;
+    color: hsl(332, 51%, 32%);
+    font-size:0.5em;
+ }
+ .first{
+    font-family: regular;
+    font-size:0.3em;
+    margin-bottom:0.8em;
+    color: hsl(30, 10%, 34%) ;
+ }
+ .first::marker{
+    color:hsl(332, 51%, 32%) ;
+ }
+ h5{
+   font-family:youngserif;
+   color: hsl(14, 45%, 36%);
+   margin-bottom: 0.2em !important;
+   font-size: 0.5em;
+ }
+ .second{
+    font-family: regular;
+    color:  hsl(30, 10%, 34%)  ;
+    font-size: 0.3em;
+    margin-bottom:0.5em;
+ }
+ .second::marker{
+    color:  hsl(14, 45%, 36%);
+    
+ }
+
+ hr{
+   color:  hsl(30, 10%, 34%) ;
+ }
+
+ .hello{
+   color: hsl(30, 10%, 34%);
+   font-size: 0.3em;
+   font-family: sub;
+}
+#one{
+   word-spacing: 25em;
+
+}
+#two{
+   word-spacing: 26em;
+
+}
+#three{
+   word-spacing: 25em;
+
+}
+#four{
+   word-spacing: 27em;
+   
+}
+.Let{
+   color: hsl(14, 45%, 36%);
 }
